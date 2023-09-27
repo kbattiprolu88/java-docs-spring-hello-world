@@ -6,6 +6,7 @@ pipeline {
         sh 'sudo mkdir maven'
         sh 'cd maven'
         sh 'touch test.txt'
+        sh 'echo "directory created"'
       }
     }
 
