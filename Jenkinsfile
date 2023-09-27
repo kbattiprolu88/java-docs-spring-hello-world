@@ -1,9 +1,11 @@
 pipeline {
   agent any
   stages {
-    stage('maven build') {
+    stage('directory-create') {
       steps {
-        sh 'mvn test'
+        sh 'sudo mkdir maven'
+        sh 'cd maven'
+        sh 'touch test.txt'
       }
     }
 
