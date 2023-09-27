@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'mvn test'
+        sh '''# executing maven test cases
+mvn test'''
       }
     }
 
