@@ -1,10 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('maven build') {
       steps {
-        sh '''# executing maven test cases
-mvn test'''
+        sh 'mvn test'
       }
     }
 
