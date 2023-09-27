@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('directory-create') {
+    stage('directory') {
       steps {
         sh 'sudo mkdir maven'
         sh 'cd maven'
